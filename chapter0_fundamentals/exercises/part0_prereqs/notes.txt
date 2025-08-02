@@ -1,0 +1,5 @@
+
+# Pytorch Broadcasting
+- Pad with ones on the left of the tensor with least number of dimensions until equal
+- Example: x -> (8, 2, 6), y -> (8, 2), pad_y -> (1, 8, 2)
+- Checking if the respective dimension after padding is equal or one of them is 1, if neither condition is satisfied then we wouldn't be able to Broadcasting
