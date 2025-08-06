@@ -1,0 +1,5 @@
+# Parameters -> weights and biases, learned during training
+# Activations -> temporary numbers stored during a forward pass of the model, must be related to a concrete input when we discuss
+
+
+# advance indexing in Pytorch, access a lookup table of Tensors (shape: (vocab_size, d_model)) using table[(batch_size, seq_len)] -> will return a tensor of shape: (batch_size, seq_len, d_model)
