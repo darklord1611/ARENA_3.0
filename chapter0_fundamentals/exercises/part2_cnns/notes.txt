@@ -1,0 +1,7 @@
+# Parameter Initialization
+- uniform Kaiming initialization -> calculated based solely on the size of current layer
+- Xavier initialization -> calculated based on previous and next size + current size of the layer
+- both aims to keep the variance of activations calculated by those initialized weights constant or within range of each other -> avoid extreme gradient updates
+
+
+- logits are translation invariant aka adding constant doesn't change the probabilities after going through softmax

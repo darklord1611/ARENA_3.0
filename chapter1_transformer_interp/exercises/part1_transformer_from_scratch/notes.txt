@@ -3,3 +3,7 @@
 
 
 # advance indexing in Pytorch, access a lookup table of Tensors (shape: (vocab_size, d_model)) using table[(batch_size, seq_len)] -> will return a tensor of shape: (batch_size, seq_len, d_model)
+
+
+# Calculate cross-entropy loss
+- At each position t, the logits are the model’s predictions for the token at t+1
