@@ -7,3 +7,15 @@
 
 # Calculate cross-entropy loss
 - At each position t, the logits are the model’s predictions for the token at t+1
+
+
+# Strategies to generate text outputs
+- Greedy Search -> select token with highest probs, Beam Search -> at each timestep, keep top k highest prob tokens and then choose the highest one
+- Both the above approaches are deterministic and still suffer from repetitive tokens -> introduce penalties like n-gram to keep the output diverse -> introduce stochasticity(random)
+-> SAMPLING
+
+- drawn tokens based on conditional probabilities, -> apply low temperature to softmax will make the distribution less random, when temperature -> 0, we go back to greedy decoding
+- Top-K sampling, choose the top K most likely next tokens -> renormalize the distribution across those K words then sample from there
+
+- Limitations of top-K, since we always draw K words at a timestep, the creativity is also damaged, model may produce gibberish or seemingly coherent but nonsense content
+-> Top-p(Nucleus) Sampling
