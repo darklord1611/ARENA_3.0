@@ -19,3 +19,6 @@
 
 - Limitations of top-K, since we always draw K words at a timestep, the creativity is also damaged, model may produce gibberish or seemingly coherent but nonsense content
 -> Top-p(Nucleus) Sampling
+
+- Top-P -> define a desired cumulative probability like 0.92 -> find the smallest set of words that have cumulative probablity close to 0.92 -> then normalize the probablity across those words
+-> Choose from a dynamic set of words every time
