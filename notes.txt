@@ -1,0 +1,3 @@
+# Progress: Ideation -> Exploration -> Understanding -> Distillation
+Research taste? the collection of intuitions and judgments that guide good decision-making throughout a research project
+Do experiment fast -> fail fast -> pivot

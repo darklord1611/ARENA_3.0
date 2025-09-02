@@ -1,0 +1,19 @@
+# A Mathematical Framework for Transformer Circuits
+- The goal? We need to study the model at a much more manageable piece instead of the whole thing
+
+- The paper is a two-halves -> first half puts the transformers into a different perspective to better reason about its components and how to interpret them
+- Second part focus on empirical evidences of the claims that Anthropic stated
+
+- One-layer attention-only? -> implement a very simple in-context learning in the form of A B ...... A -> predict B
+
+- Two-layer attention-only? -> much more expressive power -> more complex functions, we got compositions aka heads from layer 2 receives input from layer 1 and combine them in a magical way
+-> leads to an interesting phenomenon called "induction heads"
+
+# Induction heads/circuits
+
+- wtf is induction? task of detect the repeated pattern in the text and then fill it with previously occupied tokens. Example: "Manchester" is followed by "United" in previous sequences, therefore whenever we encounter "Manchester" in the future we would predict the next word to be "United"
+
+- Very different from other pattern matching because the model need to consider extra context versus simply match the last k tokens with another sequence
+- The model would hypothetically implement an algorithm for induction task
+
+- **previous token head**: An attention head that would intensively focus on previous tokens
