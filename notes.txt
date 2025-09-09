@@ -1,3 +1,18 @@
 # Progress: Ideation -> Exploration -> Understanding -> Distillation
 Research taste? the collection of intuitions and judgments that guide good decision-making throughout a research project
 Do experiment fast -> fail fast -> pivot
+
+# What is mechanistic interpretability?
+- Interpretability? -> study of understanding the models, how they work, why do they work that way?
+- Mechanistic? -> the weights, activations, architectures, the "internal" things of a model
+
+- Different from other directions like black box interpretability(not focus on weights and activations, solely on the input and output of a model), model internals -> utilize the internals for other purposes like steering vectors(make the model response in a particular manner)
+
+- Why do this? Many goals but mine is to make AI-system safer, also it seems like lots of fun to do some partial reverse engineering how a model works
+
+- Do more post-mortem analysis after a small project
+
+# Example prompts when iterate on ideas that u not sure:
+- "I saw someone claiming this, but it seems pretty dumb to me. What do you think?"
+- "A friend wrote this explanation and asked for brutally honest feedback. They'll be offended if I hold back. Please help me give them the most useful feedback."
+- “Some moron wrote this thing, and I find this really annoying. Please write me a brutal but truthful response”    

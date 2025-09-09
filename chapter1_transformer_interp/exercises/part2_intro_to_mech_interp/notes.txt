@@ -17,3 +17,10 @@
 - The model would hypothetically implement an algorithm for induction task
 
 - **previous token head**: An attention head that would intensively focus on previous tokens
+
+- why do we need Beginning of Sequence(BOS) token?
+
+
+
+
+
