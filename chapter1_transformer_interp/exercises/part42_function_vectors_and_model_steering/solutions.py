@@ -19,6 +19,7 @@ from openai import OpenAI
 from rich import print as rprint
 from rich.table import Table
 from torch import Tensor
+import os
 
 # Hide some info logging messages from nnsight
 logging.disable(sys.maxsize)
@@ -82,9 +83,9 @@ if MAIN:
 
 # If you have an API key & want to work remotely, then set REMOTE = True and replace "YOUR-API-KEY"
 # with your actual key. If not, then leave REMOTE = False.
-REMOTE = False
+REMOTE = True
 if REMOTE:
-    CONFIG.set_default_api_key("YOUR-API-KEY")
+    CONFIG.set_default_api_key(os.environ.get("NDIF_API_KEY", ""))
 
 if MAIN:
     prompt = "The Eiffel Tower is in the city of"

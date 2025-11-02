@@ -169,6 +169,9 @@ def test_intervene_with_h(intervene_with_h, model, h, ANTONYM_PAIRS, remote) -> 
     # Get non-deterministic datasets
     zero_shot_dataset = ICLDataset(ANTONYM_PAIRS, size=5, n_prepended=0)
 
+
+    print(remote)
+
     # Run the intervene_with_h function, get the output
     print("Running your `intervene_with_h` function...")
     completions_zero_shot, completions_intervention = intervene_with_h(
